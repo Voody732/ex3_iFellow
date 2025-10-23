@@ -8,10 +8,10 @@ public class Main {
         System.out.print("Введите температуру в градусах Цельсия: ");
         double celsius = scanner.nextDouble();
         System.out.print("Выберите конвертацию (k - Kelvin или f - Fahrenheit): ");
-        String choosenSystem = scanner.next();
-        if (Objects.equals(choosenSystem, "k")) {
+        String chosenSystem = scanner.next();
+        if (Objects.equals(chosenSystem, "k")) {
             converter.convertToKelvin(celsius);
-        } else if (Objects.equals(choosenSystem, "f")) {
+        } else if (Objects.equals(chosenSystem, "f")) {
             converter.convertToFahrenheit(celsius);
         }
         scanner.close();
